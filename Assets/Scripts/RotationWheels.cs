@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotationWheels : MonoBehaviour
 {
-    private float rotaionSpeed = 250f;
+    private float rotaionSpeed = 300f;
     private float verticalInput;
     // Start is called before the first frame update
     void Start()
