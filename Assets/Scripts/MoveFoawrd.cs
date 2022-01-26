@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveForward : MonoBehaviour
+public class MoveFoawrd : MonoBehaviour
 {
-    private float speed = 40f;
-
+    private float speed = 50f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +15,16 @@ public class MoveForward : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        
+       
+    }
+
+    private void OnTriggerEnter(Collider otherCollider)
+    {
+        if (otherCollider.gameObject.CompareTag("Fence"))
+        {
+            Destroy(otherCollider.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
