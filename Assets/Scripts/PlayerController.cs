@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 SpawnPoint = new Vector3(-2.206353f, -1.443f, 9.473548f);
 
+    public ParticleSystem Running_particle;
+    public ParticleSystem Running_particle_2;
+
+    private bool inMovement;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +55,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //Reseteo con CoolDown
+        //Reset con CoolDown
         if(Time.time > NextRestart)
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -61,7 +66,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        
+
+        //PARTICULAS
+
+        if (ItsOnGround == true && Input.GetKeyDown(KeyCode.W) && transform.rotation.x <= 20)
+        {
+            inMovement = true;
+
+            if(inMovement == true)
+            {
+                Running_particle.Play();
+                Running_particle_2.Play();
+            }
+            else 
+            {
+                Running_particle.Pause();
+                Running_particle.Pause();          //ARREGLAR ESTO
+            }
+        }
     }
 
     //Detectar colision con el suelo + Evitar subir montañas
