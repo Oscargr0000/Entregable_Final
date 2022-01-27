@@ -71,6 +71,8 @@ public class PlayerController : MonoBehaviour
         {
             ItsOnGround = true;
         }
+
+       
     }
 
     //Recolector de monedas
