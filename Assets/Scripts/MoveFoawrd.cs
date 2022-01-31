@@ -4,34 +4,28 @@ using UnityEngine;
 
 public class MoveFoawrd : MonoBehaviour
 {
+
+
     private float speed = 50f;
 
-    private float ObjetivePoints;
     public GameObject CoinsSpawn;
     private Vector3 CoinSpawnPos = new Vector3(55.74f, 3.46f, 180.19f);
-    private bool DestroyedObject;
-    private float counter;
-    // Start is called before the first frame update
+
+    private GeneralController GeneralControllerScript;
+
+    private float lifeTime = 5f;
+
+
     void Start()
     {
-        
+        GeneralControllerScript = GameObject.Find("TANK").GetComponent<GeneralController>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-        if (DestroyedObject == true)
-        {
-            counter++;
-            if (counter <= 1)
-            {
-                Instantiate(CoinsSpawn, CoinSpawnPos, gameObject.transform.rotation); //ARREGLAR ESTO
-            }
-            
-        }
-        
+        Destroy(gameObject, lifeTime);
     }
 
     private void OnTriggerEnter(Collider otherCollider)
@@ -44,12 +38,14 @@ public class MoveFoawrd : MonoBehaviour
 
         if (otherCollider.gameObject.CompareTag("objective"))
         {
-            ObjetivePoints++;
+            GeneralControllerScript.refreshCounter();
             Destroy(otherCollider.gameObject);
+            Destroy(gameObject);
 
-            if (ObjetivePoints == 3)
+
+            if (GeneralControllerScript.Counter >= 3)
             {
-                DestroyedObject = true;
+                Instantiate(CoinsSpawn, CoinSpawnPos, gameObject.transform.rotation);
             }
         }
     }

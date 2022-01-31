@@ -24,7 +24,9 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
 
-    private bool inMovement;
+    private float inMovement;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -69,20 +71,15 @@ public class PlayerController : MonoBehaviour
 
         //PARTICULAS
 
-        if (ItsOnGround == true && Input.GetKeyDown(KeyCode.W) && transform.rotation.x <= 20)
+        if (ItsOnGround == true && transform.rotation.x <= 20)
         {
-            inMovement = true;
-
-            if(inMovement == true)
-            {
-                Running_particle.Play();
-                Running_particle_2.Play();
-            }
-            else 
-            {
-                Running_particle.Pause();
-                Running_particle.Pause();          //ARREGLAR ESTO
-            }
+            Running_particle.Play();
+            Running_particle_2.Play();
+        }
+        else
+        {
+            Running_particle.Pause();
+            Running_particle.Pause();          //ARREGLAR ESTO
         }
     }
 
