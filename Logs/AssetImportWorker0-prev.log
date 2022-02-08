@@ -15,11 +15,11 @@ D:/Oscar-Gonzalez/Entregable_Final
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63043
+59003
 Successfully changed project path to: D:/Oscar-Gonzalez/Entregable_Final
 D:/Oscar-Gonzalez/Entregable_Final
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 36.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -35,77 +35,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002130 seconds.
+Registered in 0.002406 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.394 seconds
+- Completed reload, in  1.405 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1394ms)
-		BeginReloadAssembly (62ms)
+	ReloadAssembly (1406ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (503ms)
-			LoadAssemblies (60ms)
+		EndReloadAssembly (505ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (177ms)
+			SetupTypeCache (180ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
+			RebuildScriptCaches (43ms)
 			SetupLoadedEditorAssemblies (196ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (20ms)
-				ProcessInitializeOnLoadAttributes (102ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				RefreshPlugins (36ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (99ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003381 seconds.
+Registered in 0.003400 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.172 seconds
+- Completed reload, in  1.204 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1173ms)
-		BeginReloadAssembly (166ms)
+	ReloadAssembly (1205ms)
+		BeginReloadAssembly (171ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (938ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (963ms)
+			LoadAssemblies (96ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (325ms)
+			SetupTypeCache (326ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (356ms)
+			SetupLoadedEditorAssemblies (375ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (238ms)
+				ProcessInitializeOnLoadAttributes (255ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -114,10 +114,10 @@ Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1508 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 69.6 MB.
-System memory in use after: 69.6 MB.
+System memory in use after: 69.7 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1942.
-Total: 3.292000 ms (FindLiveObjects: 0.450300 ms CreateObjectMapping: 0.100300 ms MarkObjects: 2.630000 ms  DeleteObjects: 0.110300 ms)
+Total: 2.915800 ms (FindLiveObjects: 0.177500 ms CreateObjectMapping: 0.064600 ms MarkObjects: 2.599000 ms  DeleteObjects: 0.073100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,88 +131,104 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Materiales/Dianas_mat.mat
-  artifactKey: Guid(d19c0788c079f464f803ef1a3f19c095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/Dianas_mat.mat using Guid(d19c0788c079f464f803ef1a3f19c095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4012e5a44909b2ed205036685ec5a3') in 0.124024 seconds 
-  Import took 0.134430 seconds .
+  path: Assets/Scenes/AfterTutorial.unity
+  artifactKey: Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AfterTutorial.unity using Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9549fd78b36429b79f42e3c59526f79b') in 0.013849 seconds 
+  Import took 0.016509 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.486357 seconds.
-  path: Assets/Materiales/Particles_mat.mat
-  artifactKey: Guid(e05bb4a1a7febc844a99aae411a6c631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/Particles_mat.mat using Guid(e05bb4a1a7febc844a99aae411a6c631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5515f688cce305d88adf986908db92b') in 0.078549 seconds 
-  Import took 0.082601 seconds .
+  Time since last request: 75.717816 seconds.
+  path: Assets/Scenes/TankProject.unity
+  artifactKey: Guid(e1b793c40df980747b159fd6e9176269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TankProject.unity using Guid(e1b793c40df980747b159fd6e9176269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf90ed28d297a8a1796517aedfbc10bc') in 0.001586 seconds 
+  Import took 0.005298 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.576653 seconds.
-  path: Assets/Materiales/Laser_ma.mat
-  artifactKey: Guid(4108ab7ac8b2c2f41bdfcb97eeb33e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/Laser_ma.mat using Guid(4108ab7ac8b2c2f41bdfcb97eeb33e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb68d60f604a96576589792980b71d17') in 0.017178 seconds 
-  Import took 0.020064 seconds .
+  Time since last request: 52.280835 seconds.
+  path: Assets/LowPoly Environment Pack/Demo/Scene 3
+  artifactKey: Guid(df60628de985063449697c3d125abdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Environment Pack/Demo/Scene 3 using Guid(df60628de985063449697c3d125abdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15be32c7de2f596e516de14e5019afcb') in 0.001250 seconds 
+  Import took 0.004189 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.161068 seconds.
-  path: Assets/Materiales/Laser_mat.mat
-  artifactKey: Guid(4108ab7ac8b2c2f41bdfcb97eeb33e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/Laser_mat.mat using Guid(4108ab7ac8b2c2f41bdfcb97eeb33e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9663ccd4954c14dfa9169372b4eca1') in 0.015244 seconds 
-  Import took 0.019219 seconds .
+  Time since last request: 0.078067 seconds.
+  path: Assets/LowPoly Environment Pack/Demo/Scene 3/CameraTimeline Demo 3.playable
+  artifactKey: Guid(d64d6025a6aba534ca8893021654c49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Environment Pack/Demo/Scene 3/CameraTimeline Demo 3.playable using Guid(d64d6025a6aba534ca8893021654c49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805ea8726da86fa77e1c6b644263b7f5') in 0.047897 seconds 
+  Import took 0.050549 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 180.076143 seconds.
-  path: Assets/Prefabs/Laser.prefab
-  artifactKey: Guid(79e81eab0f64ecd458186dca9714e8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Laser.prefab using Guid(79e81eab0f64ecd458186dca9714e8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84512740decd700309608ecff15112fa') in 0.029003 seconds 
-  Import took 0.032218 seconds .
+  Time since last request: 0.000247 seconds.
+  path: Assets/LowPoly Environment Pack/Demo/Scene 3/PPS Demo 3.asset
+  artifactKey: Guid(b2efb2e5ea2c77f489248d9683783f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Environment Pack/Demo/Scene 3/PPS Demo 3.asset using Guid(b2efb2e5ea2c77f489248d9683783f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ed8464fc9e1e04b7f1b27558b001e8') in 0.004105 seconds 
+  Import took 0.006744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 627.224697 seconds.
+  path: Assets/Scenes/AfterTutorial.unity
+  artifactKey: Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AfterTutorial.unity using Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a9089b286e0db0cecd10d03e010814') in 0.002194 seconds 
+  Import took 0.005867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.037518 seconds.
+  path: Assets/Scenes/AfterTutorial.unity
+  artifactKey: Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AfterTutorial.unity using Guid(22dae1278dfdc314d8dd59d20521f1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4dc998ec1ee27b6b705cc24a6583c2') in 0.001332 seconds 
+  Import took 0.004144 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003678 seconds.
+Registered in 0.003270 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.328 seconds
+- Completed reload, in  1.164 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1328ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1164ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1103ms)
-			LoadAssemblies (108ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (957ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (355ms)
+			SetupTypeCache (329ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (456ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (326ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 72.8 MB.
-System memory in use after: 72.9 MB.
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1985.
-Total: 3.264600 ms (FindLiveObjects: 0.248900 ms CreateObjectMapping: 0.085600 ms MarkObjects: 2.907300 ms  DeleteObjects: 0.021200 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1944.
+Total: 2.960900 ms (FindLiveObjects: 0.188300 ms CreateObjectMapping: 0.057400 ms MarkObjects: 2.670600 ms  DeleteObjects: 0.043400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -224,4 +240,544 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 115.432262 seconds.
+  path: Assets/Scenes/TankProjectSettings.lighting
+  artifactKey: Guid(c87072118baa8e34db4311e707cff607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TankProjectSettings.lighting using Guid(c87072118baa8e34db4311e707cff607) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
+ -> (artifact id: 'abcbc488e3005e4c358e71eb36e28f4c') in 0.016232 seconds 
+  Import took 0.019167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.835092 seconds.
+  path: Assets/Scenes/TankProject.unity
+  artifactKey: Guid(e1b793c40df980747b159fd6e9176269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TankProject.unity using Guid(e1b793c40df980747b159fd6e9176269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced5087e4e6d96d06f3b9be4d9c6e12f') in 0.001853 seconds 
+  Import took 0.004722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1697.064222 seconds.
+  path: Assets/VoxelAnimals
+  artifactKey: Guid(2e9c3f0bb52672d4a8c8050cf7d8071b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals using Guid(2e9c3f0bb52672d4a8c8050cf7d8071b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7bd17f7e1e54d3762cf4b91af9c5d6') in 0.001377 seconds 
+  Import took 0.004992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.851353 seconds.
+  path: Assets/VoxelAnimals/Assets
+  artifactKey: Guid(f766f2818d2b2674ab07ebfb86004660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets using Guid(f766f2818d2b2674ab07ebfb86004660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df9bd81b75ef9badb04d573168dfbd5') in 0.001165 seconds 
+  Import took 0.004530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.445461 seconds.
+  path: Assets/VoxelAnimals/Assets/Scripts
+  artifactKey: Guid(a3a4bbb8d46841b41ad0d76d4dbef196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Scripts using Guid(a3a4bbb8d46841b41ad0d76d4dbef196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67b7d81f8377cd4bfd57a265df1b208') in 0.001412 seconds 
+  Import took 0.004365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.783845 seconds.
+  path: Assets/VoxelAnimals/Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(40079260bda69f14c80332a04d1632a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Scripts/PlayerController.cs using Guid(40079260bda69f14c80332a04d1632a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafde8fb7d16bccb4977f2838949f24d') in 0.012819 seconds 
+  Import took 0.015930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.898645 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs
+  artifactKey: Guid(35b964da73679214483465392cd20bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs using Guid(35b964da73679214483465392cd20bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20298ddd5982f31bda612a5ff50a752a') in 0.002462 seconds 
+  Import took 0.005211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049273 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Cat.prefab
+  artifactKey: Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Cat.prefab using Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbef0d60 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Cat.prefab from editor
+Resuming Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(-1,00000000000000000000000000000000) -> 63959de23b25e5104e3ed411fb66dd1b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbec8161 (Unity) ProduceArtifactV2
+0x00007ff7dbe16f2e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7dbdfc258 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7dbef1129 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Cat.prefab from editor
+Resuming Guid(aa2d47f95b34fbe4d9cbe095f13585b5) Importer(-1,00000000000000000000000000000000) -> 63959de23b25e5104e3ed411fb66dd1b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '4bbae74619f565f1136e3bcc11c50a4c') in 2.653450 seconds 
+  Import took 2.656065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Flower.prefab
+  artifactKey: Guid(2bc164917408ec6408959ca79846a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Flower.prefab using Guid(2bc164917408ec6408959ca79846a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3317656a5bbbf5e073273fca72de07') in 0.090223 seconds 
+  Import took 0.092995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Tree.prefab
+  artifactKey: Guid(e67ca55bb1a0074498c6f1769b012ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Tree.prefab using Guid(e67ca55bb1a0074498c6f1769b012ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6b7762d8c3fa498c415a041f374ab0') in 0.012029 seconds 
+  Import took 0.014975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Chicken.prefab
+  artifactKey: Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Chicken.prefab using Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbef0d60 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Chicken.prefab from editor
+Resuming Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(-1,00000000000000000000000000000000) -> 5e61d9ea2511a3507ad963b3d5311b26 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbec8161 (Unity) ProduceArtifactV2
+0x00007ff7dbe16f2e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7dbdfc258 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7dbef1129 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Chicken.prefab from editor
+Resuming Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(-1,00000000000000000000000000000000) -> 5e61d9ea2511a3507ad963b3d5311b26 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '0ee881922c88f92162769bf379c8a43f') in 0.006729 seconds 
+  Import took 0.010353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Dog.prefab
+  artifactKey: Guid(7451ef01e53127446b9d7406220542f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Dog.prefab using Guid(7451ef01e53127446b9d7406220542f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbef0d60 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(7451ef01e53127446b9d7406220542f6) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Dog.prefab from editor
+Resuming Guid(7451ef01e53127446b9d7406220542f6) Importer(-1,00000000000000000000000000000000) -> cc65ac35f7f1cc7547e32938415149ed 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbec8161 (Unity) ProduceArtifactV2
+0x00007ff7dbe16f2e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7dbdfc258 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7dbef1129 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(7451ef01e53127446b9d7406220542f6) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Dog.prefab from editor
+Resuming Guid(7451ef01e53127446b9d7406220542f6) Importer(-1,00000000000000000000000000000000) -> cc65ac35f7f1cc7547e32938415149ed 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: 'c7653fb4e87f0e6250ab454a50e0e775') in 0.005937 seconds 
+  Import took 0.008947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Tree2.prefab
+  artifactKey: Guid(9191e921815f6c946a6ec587468d5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Tree2.prefab using Guid(9191e921815f6c946a6ec587468d5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac37d721ecb0da7f9774b9ee144d0c8') in 0.011381 seconds 
+  Import took 0.039392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Penguin.prefab
+  artifactKey: Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Penguin.prefab using Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbef0d60 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Penguin.prefab from editor
+Resuming Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(-1,00000000000000000000000000000000) -> e444d1400cee59bd6b70159c72b414a0 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbec8161 (Unity) ProduceArtifactV2
+0x00007ff7dbe16f2e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7dbdfc258 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7dbef1129 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Penguin.prefab from editor
+Resuming Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(-1,00000000000000000000000000000000) -> e444d1400cee59bd6b70159c72b414a0 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '956d3521810f6ce3d32c1f146612b2ed') in 0.006759 seconds 
+  Import took 0.009351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/VoxelAnimals/Assets/Prefabs/Lion.prefab
+  artifactKey: Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Prefabs/Lion.prefab using Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbef0d60 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Lion.prefab from editor
+Resuming Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(-1,00000000000000000000000000000000) -> d262b0e20a7a6a6d2d2412d1320e8680 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7dbf05d82 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7dbed13a2 (Unity) ResolveArtifactV2
+0x00007ff7dbec8161 (Unity) ProduceArtifactV2
+0x00007ff7dbe16f2e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7dbdfc258 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7dbef1129 (Unity) ImportToObjects
+0x00007ff7dbef0168 (Unity) ImportAsset
+0x00007ff7dbe51f68 (Unity) AssetImportWorker::Import
+0x00007ff7dbea52fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7dbf495f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7dbf4b750 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7dbf4eede (Unity) asio::io_service::run
+0x00007ff7dbed20bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff7dbed2110 (Unity) RunAssetImporterV2
+0x00007ff7db3955b6 (Unity) Application::InitializeProject
+0x00007ff7dbd41342 (Unity) WinMain
+0x00007ff7ddb969b6 (Unity) __scrt_common_main_seh
+0x00007ffd5e7a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd60062651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(-1,00000000000000000000000000000000), Assets/VoxelAnimals/Assets/Prefabs/Lion.prefab from editor
+Resuming Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(-1,00000000000000000000000000000000) -> d262b0e20a7a6a6d2d2412d1320e8680 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '12a58360587ac8003815a8ddedd997f6') in 0.008215 seconds 
+  Import took 0.011139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.216183 seconds.
+  path: Assets/VoxelAnimals/Assets/Models
+  artifactKey: Guid(f43724eab3677c54f83da4c278a3e39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models using Guid(f43724eab3677c54f83da4c278a3e39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a850f8f6054c3d5ff51c35a65e084') in 0.001889 seconds 
+  Import took 0.004835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058926 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Cat.fbx
+  artifactKey: Guid(99c74493bf8e38f4898ddecbf36b4291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Cat.fbx using Guid(99c74493bf8e38f4898ddecbf36b4291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9490ec9b65abf6fc0ab5d4839c0210d1') in 0.126646 seconds 
+  Import took 0.129903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Tree.fbx
+  artifactKey: Guid(2497ec1f36bba8545b156eb2b78620e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Tree.fbx using Guid(2497ec1f36bba8545b156eb2b78620e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cff3a626fef2468db25238540cdbde') in 0.014987 seconds 
+  Import took 0.018023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Chicken.fbx
+  artifactKey: Guid(a781aa61e9361024cac36d44dda87c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Chicken.fbx using Guid(a781aa61e9361024cac36d44dda87c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447210a6efd195eb1a1e4b1fd5ce99f4') in 0.050991 seconds 
+  Import took 0.054384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Lion.fbx
+  artifactKey: Guid(81ce4a7ffd46313429701ca47e11a638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Lion.fbx using Guid(81ce4a7ffd46313429701ca47e11a638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b7bcbd8460797555f9c60bd6675d8f') in 0.069098 seconds 
+  Import took 0.071727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Flower.fbx
+  artifactKey: Guid(de63e1a2041c5b641a4afc981818bb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Flower.fbx using Guid(de63e1a2041c5b641a4afc981818bb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6e4b69a084b44f1a20569ac5ad6ffe') in 0.014618 seconds 
+  Import took 0.017483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Penguin.fbx
+  artifactKey: Guid(4265787259ee6f846a16b2b460d9bb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Penguin.fbx using Guid(4265787259ee6f846a16b2b460d9bb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfedd8c16317f5207a0f0a734172fff') in 0.040060 seconds 
+  Import took 0.052593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Dog.fbx
+  artifactKey: Guid(23087f4be52d60c488a49d499dfc98fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Dog.fbx using Guid(23087f4be52d60c488a49d499dfc98fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2c769c170a70f666a7b82d5e4321ea') in 0.078485 seconds 
+  Import took 0.081336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/VoxelAnimals/Assets/Models/Tree2.fbx
+  artifactKey: Guid(82b8931af888cb844ac3012c787f3751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Models/Tree2.fbx using Guid(82b8931af888cb844ac3012c787f3751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5b8358be9fa72cbcab153989d0caa9') in 0.014445 seconds 
+  Import took 0.017877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.923034 seconds.
+  path: Assets/VoxelAnimals/Demo
+  artifactKey: Guid(4f704ae4b4f98ae41a0bce26658850c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Demo using Guid(4f704ae4b4f98ae41a0bce26658850c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad9cb88a1fc91e6d7eea82b8b374945') in 0.001596 seconds 
+  Import took 0.005120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.489314 seconds.
+  path: Assets/VoxelAnimals/Documentation
+  artifactKey: Guid(9fb17a6c7f531e249b9f36b0acab78b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Documentation using Guid(9fb17a6c7f531e249b9f36b0acab78b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad01ae345cd8bc4625b351a6adc039d9') in 0.002666 seconds 
+  Import took 0.005929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 289.621699 seconds.
+  path: Assets/VoxelAnimals/Assets/Materials
+  artifactKey: Guid(4b8f3e817f9f1e243be576b34c5344d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Materials using Guid(4b8f3e817f9f1e243be576b34c5344d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898a867daf1a9596cdc31283bfa8b48c') in 0.033773 seconds 
+  Import took 0.036596 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003431 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.320 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1321ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1118ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (432ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (417ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (290ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.1 MB.
+System memory in use after: 73.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1956.
+Total: 3.304800 ms (FindLiveObjects: 0.142900 ms CreateObjectMapping: 0.050000 ms MarkObjects: 3.066100 ms  DeleteObjects: 0.044400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 722.872142 seconds.
+  path: Assets/VoxelAnimals/Assets/Textures
+  artifactKey: Guid(1bd682994d1c22b41a8b54b75fb7e23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Textures using Guid(1bd682994d1c22b41a8b54b75fb7e23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bae36dec87520dd7913e50b97d8e163') in 0.005307 seconds 
+  Import took 0.008778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.093500 seconds.
+  path: Assets/VoxelAnimals/Assets/Textures/Palette.png
+  artifactKey: Guid(66c5cdd1b6cfc8745afa9ad9f7cc0d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Textures/Palette.png using Guid(66c5cdd1b6cfc8745afa9ad9f7cc0d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fe05438b0082a6b58722f9be691332') in 0.050003 seconds 
+  Import took 0.053069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.058122 seconds.
+  path: Assets/VoxelAnimals/Assets/Materials/Floor.mat
+  artifactKey: Guid(0cda7319e1a92ce468dcd0e90b39104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Materials/Floor.mat using Guid(0cda7319e1a92ce468dcd0e90b39104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c1e410d186bc6cc4c57cf8ed37f6aaf') in 0.137366 seconds 
+  Import took 0.140464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/VoxelAnimals/Assets/Materials/Palette.mat
+  artifactKey: Guid(c7e294e05bde65747aa9d03b71fd2096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VoxelAnimals/Assets/Materials/Palette.mat using Guid(c7e294e05bde65747aa9d03b71fd2096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90fbc16946e01e6bc8328b3ba6778f2') in 0.008839 seconds 
+  Import took 0.011466 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

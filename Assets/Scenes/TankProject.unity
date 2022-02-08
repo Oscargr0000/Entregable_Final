@@ -20765,7 +20765,6 @@ GameObject:
   - component: {fileID: 2018271276}
   - component: {fileID: 2018271275}
   - component: {fileID: 2018271273}
-  - component: {fileID: 2018271280}
   - component: {fileID: 2018271279}
   - component: {fileID: 2018271274}
   m_Layer: 0
@@ -20879,27 +20878,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &2018271280
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018271272}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d44d463529724c547bb6a8cfb68c72e8, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 114912511982788226, guid: d44d463529724c547bb6a8cfb68c72e8, type: 2}
-    value: {fileID: 2018271272}
-  - key: {fileID: 0}
-    value: {fileID: 1143991582}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1001 &2020778165
 PrefabInstance:
   m_ObjectHideFlags: 0
