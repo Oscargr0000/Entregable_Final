@@ -8,17 +8,16 @@ public class MoveFoawrd : MonoBehaviour
 
     private float speed = 50f;
 
-    public GameObject CoinsSpawn;
-    private Vector3 CoinSpawnPos = new Vector3(55.74f, 3.46f, 180.19f);
+    
 
-    private GeneralController GeneralControllerScript;
+    private GameManager GameManagerScript;
 
     private float lifeTime = 5f;
 
 
     void Start()
     {
-        GeneralControllerScript = GameObject.Find("TANK").GetComponent<GeneralController>();
+        GameManagerScript = GameObject.Find("TANK").GetComponent<GameManager>();
     }
 
 
@@ -36,17 +35,11 @@ public class MoveFoawrd : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (otherCollider.gameObject.CompareTag("objective"))
+        if (otherCollider.gameObject.CompareTag("Diana"))
         {
-            GeneralControllerScript.refreshCounter();
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
-
-
-            if (GeneralControllerScript.Counter >= 3)
-            {
-                Instantiate(CoinsSpawn, CoinSpawnPos, gameObject.transform.rotation);
-            }
+            GameManagerScript.counter++;
         }
     }
 }

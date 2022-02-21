@@ -9,6 +9,7 @@ TagManager:
   - coin
   - objective
   - TANK
+  - Diana
   layers:
   - Default
   - TransparentFX

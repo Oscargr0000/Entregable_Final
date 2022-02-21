@@ -24,10 +24,6 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
 
-    private float inMovement;
-
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +76,14 @@ public class PlayerController : MonoBehaviour
         {
             Running_particle.Pause();
             Running_particle.Pause();          //ARREGLAR ESTO
+        }
+
+
+        //TESTEO PARA SCENA 2  BORRAR MÁS TARDE
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            transform.position = new Vector3(-23.6f, 10.69f, 65.5f);
         }
     }
 
