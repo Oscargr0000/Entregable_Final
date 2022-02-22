@@ -10,6 +10,9 @@ TagManager:
   - objective
   - TANK
   - Diana
+  - Money
+  - Bomb
+  - Chiken
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject CoinsSpawn;
     private Vector3 CoinSpawnPos = new Vector3(55.74f, 3.46f, 180.19f);
+    public ParticleSystem DeadParticle;
 
     public float PlayerLife = 100f;
 
@@ -24,6 +25,13 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(CoinsSpawn, CoinSpawnPos, CoinsSpawn.transform.rotation);
             counter = 0;
+        }
+
+        if(PlayerLife <= 0)
+        {
+            Destroy(gameObject);
+            Instantiate(DeadParticle, transform.position, transform.rotation);
+            
         }
     }
 

@@ -8,7 +8,7 @@ public class MoveFoawrd : MonoBehaviour
 
     private float speed = 50f;
 
-    
+    public ParticleSystem explosionSystem;
 
     private GameManager GameManagerScript;
 
@@ -33,6 +33,7 @@ public class MoveFoawrd : MonoBehaviour
         {
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
+            Instantiate(explosionSystem, transform.position, transform.rotation);
         }
 
         if (otherCollider.gameObject.CompareTag("Diana"))
@@ -40,6 +41,14 @@ public class MoveFoawrd : MonoBehaviour
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
             GameManagerScript.counter++;
+            Instantiate(explosionSystem, transform.position, transform.rotation);
+        }
+
+        if (otherCollider.gameObject.CompareTag("Chiken"))
+        {
+            Destroy(otherCollider.gameObject);
+            Destroy(gameObject);
+            Instantiate(explosionSystem, transform.position, transform.rotation);
         }
     }
 }

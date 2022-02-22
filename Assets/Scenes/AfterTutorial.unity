@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.8773585, g: 0.7196032, b: 0.15312389, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -363,6 +363,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2037612166024713834, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
+      propertyPath: PlayerLife
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037612166024713834, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
+      propertyPath: DeadParticle
+      value: 
+      objectReference: {fileID: 19821056, guid: 079954accd64b32419ec069129c81273, type: 3}
     - target: {fileID: 2462010820600448600, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
       propertyPath: m_Enabled
       value: 1

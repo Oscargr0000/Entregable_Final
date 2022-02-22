@@ -5,10 +5,12 @@ using UnityEngine;
 public class ChickenEnemy : MonoBehaviour
 {
     private GameObject player;
-    private float speed = 3f;
+    private float speed = 5f;
     public float ChikenDamage = 10f;
 
     private GameManager gameManagerScript;
+
+    public AudioClip ChikenSound;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +28,19 @@ public class ChickenEnemy : MonoBehaviour
        
 
         transform.LookAt(player.transform);
+
+        if(gameManagerScript.PlayerLife <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("TANK"))
         {
-            //gameManagerScript.PlayerLife - 10f;
+            gameManagerScript.PlayerLife -= 10f;
+            Debug.Log(gameManagerScript.PlayerLife);
         }
     }
 }

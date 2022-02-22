@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
 
+    public AudioClip movementAudioClip;
+    public AudioClip shottingAudioClip;
+    public AudioClip explosionAudioClip;
+
+
     // Start is called before the first frame update
     void Start()
     {

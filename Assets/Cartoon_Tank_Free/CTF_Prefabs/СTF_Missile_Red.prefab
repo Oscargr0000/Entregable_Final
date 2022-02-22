@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efd76396be9b9a42b6f88cb62c714c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinsSpawn: {fileID: 7008465811677082705, guid: 075c9ebe9b8ceb0498b4aa8dcd1ce254, type: 3}
+  explosionSystem: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
 --- !u!65 &-1061942350012979529
 BoxCollider:
   m_ObjectHideFlags: 0
