@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
+    public ParticleSystem RecolectParticle;
 
     public AudioClip movementAudioClip;
     public AudioClip shottingAudioClip;
@@ -111,6 +112,7 @@ public class PlayerController : MonoBehaviour
             Counter++;
             Debug.Log($"Has conseguido{Counter}, ¡Sigue Así!");
             Destroy(otherCollider.gameObject);
+            Instantiate(RecolectParticle, transform.position, transform.rotation);
         }
     }
 }

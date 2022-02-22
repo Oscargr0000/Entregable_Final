@@ -24909,6 +24909,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 8362787410197010642, guid: 08338119ba0c943449889713a3e36f21, type: 3}
+    - target: {fileID: 2462010820600448600, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
+      propertyPath: RecolectParticle
+      value: 
+      objectReference: {fileID: 2852413659578719189, guid: ca11de6347ee648e78e32d5edb051192, type: 3}
     - target: {fileID: 4732105890036616790, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
       propertyPath: m_RootOrder
       value: 5
