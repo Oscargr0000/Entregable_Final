@@ -10,8 +10,6 @@ public class ChickenEnemy : MonoBehaviour
 
     private GameManager gameManagerScript;
 
-    public AudioClip ChikenSound;
-
     // Start is called before the first frame update
     void Start()
     {

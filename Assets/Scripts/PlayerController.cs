@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -101,6 +102,17 @@ public class PlayerController : MonoBehaviour
             ItsOnGround = true;
         }
 
+
+        if (otherCollider.gameObject.CompareTag("TP") && Counter >= 3)
+        {
+            SceneManager.LoadScene(2);
+            Debug.Log("FUNCIONA");
+        }
+        
+        if (otherCollider.gameObject.CompareTag("TP") && Counter <= 3)
+        {
+            Debug.Log("Necesitas 3 modenas para poder activar este teletransportador");
+        }
        
     }
 

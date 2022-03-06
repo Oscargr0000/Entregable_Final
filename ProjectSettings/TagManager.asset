@@ -13,6 +13,9 @@ TagManager:
   - Money
   - Bomb
   - Chiken
+  - good
+  - Bad
+  - TP
   layers:
   - Default
   - TransparentFX
