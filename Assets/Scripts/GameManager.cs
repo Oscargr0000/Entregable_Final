@@ -14,9 +14,11 @@ public class GameManager : MonoBehaviour
 
     public float PlayerLife = 100f;
 
+    public bool gameOver;
+
     void Start()
     {
-        
+        gameOver = false;
     }
 
     private void Update()
@@ -29,10 +31,15 @@ public class GameManager : MonoBehaviour
 
         if(PlayerLife <= 0)
         {
-            Destroy(gameObject);
-            Instantiate(DeadParticle, transform.position, transform.rotation);
-            
+
+            GameOver();
         }
+    }
+    private void GameOver()
+    {
+        gameOver = true;
+        Destroy(gameObject);
+        Instantiate(DeadParticle, transform.position, transform.rotation);
     }
 
 }

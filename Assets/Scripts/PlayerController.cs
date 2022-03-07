@@ -25,15 +25,20 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
     public ParticleSystem RecolectParticle;
+    public ParticleSystem GameOverParticle;
 
     public AudioClip movementAudioClip;
     public AudioClip shottingAudioClip;
     public AudioClip explosionAudioClip;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         transform.position = SpawnPoint;
     }
 
@@ -127,4 +132,5 @@ public class PlayerController : MonoBehaviour
             Instantiate(RecolectParticle, transform.position, transform.rotation);
         }
     }
+
 }

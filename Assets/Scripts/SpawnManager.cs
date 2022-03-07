@@ -7,15 +7,14 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject ChickenEnemy;
 
-    private int TotalEnemy = 0;
+    private int TotalEnemy = 1;
     private int EnemyLeft;
 
-    //private int SpawnPosEnemy = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(ChickenEnemy, RandomSpawnPostion(), ChickenEnemy.transform.rotation); // test
+        
         SpawnEnemyWave(TotalEnemy);
     }
 
@@ -35,7 +34,7 @@ public class SpawnManager : MonoBehaviour
         float xRandom = Random.Range(-32,-19);
         float zRandom = Random.Range(53,70);
 
-        return new Vector3(xRandom, 10, zRandom);
+        return new Vector3(xRandom,4, zRandom);
     }
 
     void SpawnEnemy()
