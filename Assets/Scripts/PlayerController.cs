@@ -31,14 +31,17 @@ public class PlayerController : MonoBehaviour
     public AudioClip shottingAudioClip;
     public AudioClip explosionAudioClip;
 
-    
+    private SpawnManager SpawnManagerScript;
+    public GameObject Barrier;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        SpawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+
+        SpawnManagerScript.enabled = false;
         transform.position = SpawnPoint;
     }
 
@@ -131,6 +134,23 @@ public class PlayerController : MonoBehaviour
             Destroy(otherCollider.gameObject);
             Instantiate(RecolectParticle, transform.position, transform.rotation);
         }
+
+
+        // Activar los pollos
+
+        if (otherCollider.gameObject.CompareTag("ActivateChikens"))
+        {
+
+            Barrier.SetActive(true);
+            SpawnManagerScript.enabled = true;
+
+            
+
+            Destroy(otherCollider.gameObject);
+        }
     }
+
+
+
 
 }

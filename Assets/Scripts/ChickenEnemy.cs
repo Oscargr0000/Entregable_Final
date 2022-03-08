@@ -21,16 +21,15 @@ public class ChickenEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameManagerScript.gameOver == true)
+        {
+            speed = 0f;
+        }
 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
        
 
-        transform.LookAt(player.transform);
-
-        if(gameManagerScript.PlayerLife <= 0)
-        {
-            Destroy(gameObject);
-        }
+        transform.LookAt(player.transform);   
     }
 
     private void OnCollisionEnter(Collision collision)

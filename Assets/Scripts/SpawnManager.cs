@@ -7,15 +7,14 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject ChickenEnemy;
 
-    private int TotalEnemy = 1;
+    public int TotalEnemy = 1;
     private int EnemyLeft;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        SpawnEnemyWave(TotalEnemy);
+        SpawnEnemyWave(TotalEnemy); 
     }
 
     // Update is called once per frame
@@ -42,7 +41,7 @@ public class SpawnManager : MonoBehaviour
         Instantiate(ChickenEnemy, RandomSpawnPostion(), ChickenEnemy.transform.rotation);
     }
 
-    void SpawnEnemyWave(int enemyInMap)
+    public void SpawnEnemyWave(int enemyInMap)
     {
         for (int i = 0; i < enemyInMap; i++)
         {

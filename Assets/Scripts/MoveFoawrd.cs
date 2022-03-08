@@ -14,6 +14,8 @@ public class MoveFoawrd : MonoBehaviour
 
     private float lifeTime = 5f;
 
+    private int bosshits;
+
 
     void Start()
     {
@@ -48,6 +50,12 @@ public class MoveFoawrd : MonoBehaviour
         {
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
+            Instantiate(explosionSystem, transform.position, transform.rotation);
+        }
+
+        if (otherCollider.gameObject.CompareTag("Boss"))
+        {
+            bosshits++;
             Instantiate(explosionSystem, transform.position, transform.rotation);
         }
     }

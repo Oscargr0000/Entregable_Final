@@ -16,6 +16,9 @@ TagManager:
   - good
   - Bad
   - TP
+  - ActivateChikens
+  - Barrier
+  - Boss
   layers:
   - Default
   - TransparentFX

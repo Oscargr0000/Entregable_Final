@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public float PlayerLife = 100f;
 
+
     public bool gameOver;
 
     void Start()
