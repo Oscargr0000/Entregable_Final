@@ -15,7 +15,8 @@ public class ChickenEnemy : MonoBehaviour
     {
         player = GameObject.Find("TANK");
 
-        gameManagerScript = GameObject.Find("TANK").GetComponent<GameManager>();
+        gameManagerScript = FindObjectOfType<GameManager>();
+
     }
 
     // Update is called once per frame

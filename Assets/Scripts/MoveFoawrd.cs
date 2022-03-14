@@ -14,12 +14,12 @@ public class MoveFoawrd : MonoBehaviour
 
     private float lifeTime = 5f;
 
-    private int bosshits;
+    public int bosshits;
 
 
     void Start()
     {
-        GameManagerScript = GameObject.Find("TANK").GetComponent<GameManager>();
+        GameManagerScript = FindObjectOfType<GameManager>();
     }
 
 
@@ -55,7 +55,7 @@ public class MoveFoawrd : MonoBehaviour
 
         if (otherCollider.gameObject.CompareTag("Boss"))
         {
-            bosshits++;
+            GameManagerScript.BossHits++;
             Instantiate(explosionSystem, transform.position, transform.rotation);
         }
     }

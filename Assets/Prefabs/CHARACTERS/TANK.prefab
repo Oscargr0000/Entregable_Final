@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 2462010820600448600}
   - component: {fileID: 157726064939671692}
   - component: {fileID: 2612578354320617370}
-  - component: {fileID: 2037612166024713834}
+  - component: {fileID: 360261786}
   m_Layer: 0
   m_Name: TANK
   m_TagString: TANK
@@ -380,7 +380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6412979985979931111}
-  m_LocalRotation: {x: -0, y: 0.13200969, z: -0, w: 0.9912484}
+  m_LocalRotation: {x: 0, y: 0.13200556, z: 0, w: 0.99124897}
   m_LocalPosition: {x: -2.2063527, y: -1.443, z: 9.473548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -455,9 +455,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d210c27d1330f842b2b087918710aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 8362787410197010642, guid: 08338119ba0c943449889713a3e36f21, type: 3}
   Running_particle: {fileID: 2071758470184196500}
   Running_particle_2: {fileID: 2071758470437782962}
+  RecolectParticle: {fileID: 2852413659578719189, guid: add0094915541482eba1289c3174a5ca, type: 3}
+  movementAudioClip: {fileID: 0}
+  shottingAudioClip: {fileID: 0}
+  explosionAudioClip: {fileID: 0}
+  CoinsSpawn: {fileID: 0}
+  projectilePrefab: {fileID: 8362787410197010642, guid: 08338119ba0c943449889713a3e36f21, type: 3}
 --- !u!54 &157726064939671692
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -487,18 +492,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9243641, y: 1.9318541, z: 2.9468136}
   m_Center: {x: 0.0067898035, y: 0.18277794, z: 0.102375746}
---- !u!114 &2037612166024713834
-MonoBehaviour:
+--- !u!82 &360261786
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6412979985979931111}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ff4e5417016104f9abfa15f68f476f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 130.13663
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6600737493209260671
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +842,10 @@ PrefabInstance:
     - target: {fileID: 5768611185448718591, guid: 45d4a29d6c9a5d245b341f7d0b8c6fce, type: 3}
       propertyPath: m_Name
       value: RunningParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404121095863405087, guid: 45d4a29d6c9a5d245b341f7d0b8c6fce, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45d4a29d6c9a5d245b341f7d0b8c6fce, type: 3}

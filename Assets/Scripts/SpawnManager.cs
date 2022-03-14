@@ -6,15 +6,18 @@ using Random = UnityEngine.Random;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject ChickenEnemy;
+    public GameObject Boss;
 
     public int TotalEnemy = 1;
     private int EnemyLeft;
+    public int LeftToDestroy;
 
 
     // Start is called before the first frame update
     void Start()
     {
         SpawnEnemyWave(TotalEnemy); 
+        
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class SpawnManager : MonoBehaviour
         {
             TotalEnemy++;
             SpawnEnemyWave(TotalEnemy);
+            LeftToDestroy++;    
         }
     }
 
@@ -33,7 +37,7 @@ public class SpawnManager : MonoBehaviour
         float xRandom = Random.Range(-32,-19);
         float zRandom = Random.Range(53,70);
 
-        return new Vector3(xRandom,4, zRandom);
+        return new Vector3(xRandom,4,zRandom);
     }
 
     void SpawnEnemy()
