@@ -6,7 +6,7 @@ public class ChickenEnemy : MonoBehaviour
 {
     private GameObject player;
     private float speed = 5f;
-    public float ChikenDamage = 10f;
+    public int ChikenDamage = 10;
 
     private GameManager gameManagerScript;
 
@@ -39,6 +39,7 @@ public class ChickenEnemy : MonoBehaviour
         {
             gameManagerScript.PlayerLife -= 10f;
             Debug.Log(gameManagerScript.PlayerLife);
+            
         }
     }
 }

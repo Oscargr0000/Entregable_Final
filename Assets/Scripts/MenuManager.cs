@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
+
+    public GameObject Options_canvas;
+    public GameObject MainMenu;
+    public GameObject Creditos_canvas;
+    public GameObject Logros_canvas;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        MainMenu.SetActive(true);
+        Options_canvas.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -28,5 +37,37 @@ public class MenuManager : MonoBehaviour
     public void ChangeSceneOptions()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void Options()
+    {
+        MainMenu.SetActive(false);
+        Options_canvas.SetActive(true);
+        Creditos_canvas.SetActive(false);
+        Logros_canvas.SetActive(false);
+    }
+
+    public void mainmenu()
+    {
+        MainMenu.SetActive(true);
+        Options_canvas.SetActive(false);
+        Creditos_canvas.SetActive(false);
+        Logros_canvas.SetActive(false);
+    }
+
+    public void Creditos()
+    {
+        MainMenu.SetActive(false);
+        Options_canvas.SetActive(false);
+        Creditos_canvas.SetActive(true);
+        Logros_canvas.SetActive(false);
+    }
+
+    public void logros()
+    {
+        MainMenu.SetActive(false);
+        Options_canvas.SetActive(false);
+        Creditos_canvas.SetActive(false);
+        Logros_canvas.SetActive(true);
     }
 }

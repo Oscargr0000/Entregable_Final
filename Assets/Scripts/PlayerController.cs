@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     
     private bool ItsOnGround = false;
-    private int Counter;
+    public int CounterCoins;
 
     private Vector3 restartVehicleNum = new Vector3(0, 0.3f, 0);
     private Quaternion restartVehicleRotation = Quaternion.Euler(0, 0, 0);
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(projectilePrefab, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.85f, gameObject.transform.position.z), gameObject.transform.rotation);
 
-            PlayerAnimator.SetTrigger("Shotting");
+            //PlayerAnimator.SetTrigger("Shotting");
         }
 
 
@@ -137,13 +137,13 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (otherCollider.gameObject.CompareTag("TP") && Counter >= 3)
+        if (otherCollider.gameObject.CompareTag("TP") && CounterCoins >= 3)
         {
             SceneManager.LoadScene(2);
             Debug.Log("FUNCIONA");
         }
         
-        if (otherCollider.gameObject.CompareTag("TP") && Counter <= 3)
+        if (otherCollider.gameObject.CompareTag("TP") && CounterCoins <= 3)
         {
             Debug.Log("Necesitas 3 modenas para poder activar este teletransportador");
         }
@@ -155,8 +155,8 @@ public class PlayerController : MonoBehaviour
     {
         if (otherCollider.gameObject.CompareTag("coin"))
         {
-            Counter++;
-            Debug.Log($"Has conseguido{Counter}, ¡Sigue Así!");
+            GameManagerScript.counter++;
+            Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
             Destroy(otherCollider.gameObject);
             Instantiate(RecolectParticle, transform.position, transform.rotation);
         }

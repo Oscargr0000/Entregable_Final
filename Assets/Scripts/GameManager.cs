@@ -5,20 +5,27 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
+    //General
     public int counter;
-
-    public ParticleSystem DeadParticle;
-
     public float PlayerLife = 100f;
 
-    public bool gameOver;
-
+    //Boss
     public int BossHits;
+
+    //Game Over
+    public bool gameOver;
+    public ParticleSystem DeadParticle;
+
+    //UI
+    public TextMeshProUGUI ScoreText;
+    public TextMeshProUGUI HealthUI;
+
+    private PlayerController PlayerControllerScript;
 
     void Start()
     {
         gameOver = false;
+        PlayerControllerScript = FindObjectOfType<PlayerController>();
     }
 
     private void Update()
@@ -35,5 +42,17 @@ public class GameManager : MonoBehaviour
         Destroy(gameObject);
         Instantiate(DeadParticle, transform.position, transform.rotation);
     }
+
+    /*public void UpdateScore(int pointToAdd)
+    {
+        
+        ScoreText.text = $"Monedas: {pointToAdd}";
+    }
+
+    public void UpdateLife(int Life)
+    {
+        PlayerLife -= Life;
+        HealthUI.text = $"HP {Life}";
+    }*/
 
 }
