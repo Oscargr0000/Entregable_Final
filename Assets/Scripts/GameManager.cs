@@ -20,27 +20,55 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI HealthUI;
 
+    public GameObject WASD;
+    public GameObject RestartPos;
+    public GameObject Coins;
+    public GameObject Shot;
+    //public GameObject Shotting;
+
     private PlayerController PlayerControllerScript;
+    private SpawnManager spawnManagerScript;
+    private SpawnBos SpawnBossScript;
+   
+
+    private bool WIN;
+
+    public int ChikensKilled;
 
     void Start()
     {
         gameOver = false;
         PlayerControllerScript = FindObjectOfType<PlayerController>();
+        spawnManagerScript = FindObjectOfType<SpawnManager>();
+        SpawnBossScript = FindObjectOfType<SpawnBos>();
+
+        SpawnBossScript.enabled = false;
+        spawnManagerScript.enabled = false;
+        WIN = false;
+
     }
 
     private void Update()
     {
-        if(PlayerLife <= 0)
-        {
 
-            GameOver();
+        if(spawnManagerScript.TotalEnemy == 3)
+        {
+            spawnManagerScript.enabled = false;
         }
+
+        if(ChikensKilled >= 6)
+        {
+            SpawnBossScript.enabled = true;
+        }
+
+
     }
-    public void GameOver()
+    
+
+    public void WIIN()
     {
-        gameOver = true;
-        Destroy(gameObject);
-        Instantiate(DeadParticle, transform.position, transform.rotation);
+        WIN = true;
+        
     }
 
     /*public void UpdateScore(int pointToAdd)

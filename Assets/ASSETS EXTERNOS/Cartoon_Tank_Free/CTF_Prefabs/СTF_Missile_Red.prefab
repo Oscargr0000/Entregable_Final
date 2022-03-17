@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efd76396be9b9a42b6f88cb62c714c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SuperCoin: {fileID: 6887784778367138045, guid: a9a13c88b172fb147b3ae4c5383dfe6b, type: 3}
   explosionSystem: {fileID: 2852413659578719189, guid: ad604245d81df4d9faffb305340f5797, type: 3}
+  bosshits: 0
 --- !u!65 &-1061942350012979529
 BoxCollider:
   m_ObjectHideFlags: 0

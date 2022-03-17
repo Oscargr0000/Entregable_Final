@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MoveFoawrd : MonoBehaviour
 {
-
+    public GameObject SuperCoin;
 
     private float speed = 50f;
 
@@ -15,6 +16,8 @@ public class MoveFoawrd : MonoBehaviour
     private float lifeTime = 5f;
 
     public int bosshits;
+
+
 
 
     void Start()
@@ -49,6 +52,7 @@ public class MoveFoawrd : MonoBehaviour
         if (otherCollider.gameObject.CompareTag("Chiken"))
         {
             Destroy(otherCollider.gameObject);
+            GameManagerScript.ChikensKilled++;
             Destroy(gameObject);
             Instantiate(explosionSystem, transform.position, transform.rotation);
         }
@@ -57,6 +61,13 @@ public class MoveFoawrd : MonoBehaviour
         {
             GameManagerScript.BossHits++;
             Instantiate(explosionSystem, transform.position, transform.rotation);
+
+            if(GameManagerScript.BossHits >= 5)
+            {
+                Destroy(otherCollider.gameObject);
+                Instantiate(SuperCoin, new Vector3(-23.6f, 4f, 65.5f), SuperCoin.transform.rotation);
+
+            }
         }
     }
 }

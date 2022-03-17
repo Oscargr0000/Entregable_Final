@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator PlayerAnimator;
 
+    private SpawnManager SpawnManagerScript;
+
 
 
 
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if(GameManagerScript.PlayerLife <= 0)
         {
-            GameManagerScript.GameOver();
+            GameOver();
         }
 
 
@@ -155,16 +157,20 @@ public class PlayerController : MonoBehaviour
     {
         if (otherCollider.gameObject.CompareTag("coin"))
         {
-            GameManagerScript.counter++;
+            CounterCoins++;
             Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
             Destroy(otherCollider.gameObject);
             Instantiate(RecolectParticle, transform.position, transform.rotation);
         }
 
-        
+
     }
 
-
-
+    public void GameOver()
+    {
+        GameManagerScript.gameOver = true;
+        Destroy(gameObject);
+        Instantiate(GameManagerScript.DeadParticle, transform.position, transform.rotation);
+    }
 
 }

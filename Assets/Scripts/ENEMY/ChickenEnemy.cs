@@ -37,7 +37,7 @@ public class ChickenEnemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("TANK"))
         {
-            gameManagerScript.PlayerLife -= 10f;
+            gameManagerScript.PlayerLife -= ChikenDamage;
             Debug.Log(gameManagerScript.PlayerLife);
             
         }
