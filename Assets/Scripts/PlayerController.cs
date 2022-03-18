@@ -27,10 +27,6 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Running_particle_2;
     public ParticleSystem RecolectParticle;
 
-    public AudioClip movementAudioClip;
-    public AudioClip shottingAudioClip;
-    public AudioClip explosionAudioClip;
-
     public GameObject CoinsSpawn;
     public GameObject projectilePrefab;
 
@@ -39,6 +35,7 @@ public class PlayerController : MonoBehaviour
     private Animator PlayerAnimator;
 
     private SpawnManager SpawnManagerScript;
+    private AudioManager AudioManagerScript;
 
 
 
@@ -48,7 +45,8 @@ public class PlayerController : MonoBehaviour
     {
 
         GameManagerScript = FindObjectOfType<GameManager>();
-       
+        AudioManagerScript = FindObjectOfType<AudioManager>();
+
         transform.position = SpawnPoint;
     }
 
@@ -79,6 +77,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectilePrefab, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.85f, gameObject.transform.position.z), gameObject.transform.rotation);
+            AudioManagerScript.PlaySound(2);
 
             //PlayerAnimator.SetTrigger("Shotting");
         }
@@ -161,6 +160,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
             Destroy(otherCollider.gameObject);
             Instantiate(RecolectParticle, transform.position, transform.rotation);
+            AudioManagerScript.PlaySound(1);
         }
 
 

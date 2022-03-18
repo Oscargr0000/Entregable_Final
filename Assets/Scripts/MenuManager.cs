@@ -10,13 +10,14 @@ public class MenuManager : MonoBehaviour
     public GameObject Creditos_canvas;
     public GameObject Logros_canvas;
 
+    private AudioManager AudioManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         MainMenu.SetActive(true);
         Options_canvas.SetActive(false);
-
+        AudioManagerScript = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -45,6 +46,7 @@ public class MenuManager : MonoBehaviour
         Options_canvas.SetActive(true);
         Creditos_canvas.SetActive(false);
         Logros_canvas.SetActive(false);
+        AudioManagerScript.PlaySound(0);
     }
 
     public void mainmenu()
@@ -53,6 +55,7 @@ public class MenuManager : MonoBehaviour
         Options_canvas.SetActive(false);
         Creditos_canvas.SetActive(false);
         Logros_canvas.SetActive(false);
+        AudioManagerScript.PlaySound(0);
     }
 
     public void Creditos()
@@ -61,6 +64,7 @@ public class MenuManager : MonoBehaviour
         Options_canvas.SetActive(false);
         Creditos_canvas.SetActive(true);
         Logros_canvas.SetActive(false);
+        AudioManagerScript.PlaySound(0);
     }
 
     public void logros()
@@ -69,5 +73,6 @@ public class MenuManager : MonoBehaviour
         Options_canvas.SetActive(false);
         Creditos_canvas.SetActive(false);
         Logros_canvas.SetActive(true);
+        AudioManagerScript.PlaySound(0);
     }
 }

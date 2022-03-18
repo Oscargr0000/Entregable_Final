@@ -17,12 +17,14 @@ public class MoveFoawrd : MonoBehaviour
 
     public int bosshits;
 
+    private AudioManager AudioManagerScript;
 
 
 
     void Start()
     {
         GameManagerScript = FindObjectOfType<GameManager>();
+        AudioManagerScript = FindObjectOfType<AudioManager>();
     }
 
 
@@ -39,6 +41,8 @@ public class MoveFoawrd : MonoBehaviour
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
             Instantiate(explosionSystem, transform.position, transform.rotation);
+
+            AudioManagerScript.PlaySound(3);
         }
 
         if (otherCollider.gameObject.CompareTag("Diana"))

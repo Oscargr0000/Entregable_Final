@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     private PlayerController PlayerControllerScript;
     private SpawnManager spawnManagerScript;
     private SpawnBos SpawnBossScript;
+    private AudioManager AudioManagerScript;
    
 
     private bool WIN;
@@ -37,14 +38,22 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        gameOver = false;
+        
         PlayerControllerScript = FindObjectOfType<PlayerController>();
         spawnManagerScript = FindObjectOfType<SpawnManager>();
         SpawnBossScript = FindObjectOfType<SpawnBos>();
+        AudioManagerScript = FindObjectOfType<AudioManager>();
+
+        
 
         SpawnBossScript.enabled = false;
         spawnManagerScript.enabled = false;
+
+        AudioManagerScript.PlaySound(0);
+
+
         WIN = false;
+        gameOver = false;
 
     }
 
