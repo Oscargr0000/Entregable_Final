@@ -23,6 +23,7 @@ TagManager:
   - REST
   - CoinsUI
   - Shotting
+  - SuperCoin
   layers:
   - Default
   - TransparentFX

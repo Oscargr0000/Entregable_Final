@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3528435510478755318, guid: ac9fb703af2ca1d4e86ab3c3fa87bcd0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad89eeb62d8ffa94c929cfb7e322d058, type: 3}
     - target: {fileID: 451874263190715396, guid: ac9fb703af2ca1d4e86ab3c3fa87bcd0, type: 3}
       propertyPath: ChikenDamage
       value: 50

@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
 
     private SpawnManager SpawnManagerScript;
     private AudioManager AudioManagerScript;
+    private MenuManager MenuManagerScript;
+
+    public GameObject UItuto;
 
 
 
@@ -46,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
         GameManagerScript = FindObjectOfType<GameManager>();
         AudioManagerScript = FindObjectOfType<AudioManager>();
+        MenuManagerScript = FindObjectOfType<MenuManager>();
 
         transform.position = SpawnPoint;
     }
@@ -141,14 +145,20 @@ public class PlayerController : MonoBehaviour
         if (otherCollider.gameObject.CompareTag("TP") && CounterCoins >= 3)
         {
             SceneManager.LoadScene(2);
-            Debug.Log("FUNCIONA");
-        }
-        
-        if (otherCollider.gameObject.CompareTag("TP") && CounterCoins <= 3)
-        {
-            Debug.Log("Necesitas 3 modenas para poder activar este teletransportador");
         }
        
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("TP") && CounterCoins <= 3)
+        {
+            UItuto.SetActive(true);
+        }
+        else
+        {
+            UItuto.SetActive(false);
+        }
     }
 
     //Recolector de monedas
@@ -163,6 +173,18 @@ public class PlayerController : MonoBehaviour
             AudioManagerScript.PlaySound(1);
         }
 
+        if (otherCollider.gameObject.CompareTag("SuperCoin"))
+        {
+            CounterCoins++;
+            Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
+            Destroy(otherCollider.gameObject);
+            Instantiate(RecolectParticle, transform.position, transform.rotation);
+            AudioManagerScript.PlaySound(1);
+            MenuManagerScript.WIN();
+            speed = 0;
+            rotationspeed = 0;
+        }
+
 
     }
 
@@ -171,6 +193,7 @@ public class PlayerController : MonoBehaviour
         GameManagerScript.gameOver = true;
         Destroy(gameObject);
         Instantiate(GameManagerScript.DeadParticle, transform.position, transform.rotation);
+        MenuManagerScript.GAMEOVER();
     }
 
 }

@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         MainMenuAudioSource = FindObjectOfType<AudioSource>();
+        PlaySound(4);
 
     }
 

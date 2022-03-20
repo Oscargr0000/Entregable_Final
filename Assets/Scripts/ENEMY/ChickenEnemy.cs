@@ -9,6 +9,7 @@ public class ChickenEnemy : MonoBehaviour
     public int ChikenDamage = 10;
 
     private GameManager gameManagerScript;
+    private AudioManager AudioManagerScript;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class ChickenEnemy : MonoBehaviour
         player = GameObject.Find("TANK");
 
         gameManagerScript = FindObjectOfType<GameManager>();
+        AudioManagerScript = FindObjectOfType<AudioManager>();
 
     }
 
@@ -39,6 +41,8 @@ public class ChickenEnemy : MonoBehaviour
         {
             gameManagerScript.PlayerLife -= ChikenDamage;
             Debug.Log(gameManagerScript.PlayerLife);
+            AudioManagerScript.PlaySound(5);
+            
             
         }
     }

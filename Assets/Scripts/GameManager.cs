@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     private AudioManager AudioManagerScript;
    
 
-    private bool WIN;
+    
 
     public int ChikensKilled;
 
@@ -49,10 +49,8 @@ public class GameManager : MonoBehaviour
         SpawnBossScript.enabled = false;
         spawnManagerScript.enabled = false;
 
-        AudioManagerScript.PlaySound(0);
 
-
-        WIN = false;
+        
         gameOver = false;
 
     }
@@ -74,11 +72,7 @@ public class GameManager : MonoBehaviour
     }
     
 
-    public void WIIN()
-    {
-        WIN = true;
-        
-    }
+    
 
     /*public void UpdateScore(int pointToAdd)
     {

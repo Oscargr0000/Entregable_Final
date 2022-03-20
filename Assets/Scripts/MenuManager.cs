@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
     public GameObject MainMenu;
     public GameObject Creditos_canvas;
     public GameObject Logros_canvas;
+    public GameObject WinCanvas;
+    public GameObject GameOver;
 
     private AudioManager AudioManagerScript;
 
@@ -18,6 +20,8 @@ public class MenuManager : MonoBehaviour
         MainMenu.SetActive(true);
         Options_canvas.SetActive(false);
         AudioManagerScript = FindObjectOfType<AudioManager>();
+        WinCanvas.SetActive(false);
+        GameOver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -74,5 +78,15 @@ public class MenuManager : MonoBehaviour
         Creditos_canvas.SetActive(false);
         Logros_canvas.SetActive(true);
         AudioManagerScript.PlaySound(0);
+    }
+
+    public void WIN()
+    {
+        WinCanvas.SetActive(true);
+    }
+
+    public void GAMEOVER()
+    {
+        GameOver.SetActive(true);
     }
 }

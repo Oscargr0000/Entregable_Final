@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SuperCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 7008465811677082705, guid: 075c9ebe9b8ceb0498b4aa8dcd1ce254, type: 3}
+      propertyPath: m_TagString
+      value: SuperCoin
+      objectReference: {fileID: 0}
     - target: {fileID: 7640570251059080939, guid: 075c9ebe9b8ceb0498b4aa8dcd1ce254, type: 3}
       propertyPath: m_RootOrder
       value: 0

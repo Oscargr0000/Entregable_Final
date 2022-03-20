@@ -51,6 +51,7 @@ public class MoveFoawrd : MonoBehaviour
             Destroy(gameObject);
             GameManagerScript.counter++;
             Instantiate(explosionSystem, transform.position, transform.rotation);
+            AudioManagerScript.PlaySound(3);
         }
 
         if (otherCollider.gameObject.CompareTag("Chiken"))
@@ -59,12 +60,14 @@ public class MoveFoawrd : MonoBehaviour
             GameManagerScript.ChikensKilled++;
             Destroy(gameObject);
             Instantiate(explosionSystem, transform.position, transform.rotation);
+            AudioManagerScript.PlaySound(3);
         }
 
         if (otherCollider.gameObject.CompareTag("Boss"))
         {
             GameManagerScript.BossHits++;
             Instantiate(explosionSystem, transform.position, transform.rotation);
+            AudioManagerScript.PlaySound(6);
 
             if(GameManagerScript.BossHits >= 5)
             {
