@@ -1355,6 +1355,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sound:
   - {fileID: 8300000, guid: e9b3ef3aee50bcb4483c20bcf6f8bab3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 5899303d78b931e4e81a0512fdd0fd93, type: 3}
 --- !u!4 &711921621
 Transform:
   m_ObjectHideFlags: 0
@@ -1792,6 +1796,8 @@ MonoBehaviour:
   MainMenu: {fileID: 1837463744}
   Creditos_canvas: {fileID: 2029922276}
   Logros_canvas: {fileID: 610872089}
+  WinCanvas: {fileID: 1034247399}
+  GameOver: {fileID: 1034247399}
 --- !u!4 &1032827282
 Transform:
   m_ObjectHideFlags: 0
@@ -1805,6 +1811,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034247399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034247400}
+  m_Layer: 0
+  m_Name: EMPTY
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034247400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034247399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 792.98694, y: 235.11246, z: -99.301346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280198508
 GameObject:

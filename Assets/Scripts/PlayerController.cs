@@ -5,45 +5,50 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
+    // Movement of the player
     private float speed = 10f;
     private float rotationspeed = 100f;
     private float verticalInput;
     private float horizontalInput;
-    
-    private bool ItsOnGround = false;
-    public int CounterCoins;
 
+    //Positions
+    private Vector3 SpawnPoint = new Vector3(-2.206353f, -1.443f, 9.473548f);
     private Vector3 restartVehicleNum = new Vector3(0, 0.3f, 0);
     private Quaternion restartVehicleRotation = Quaternion.Euler(0, 0, 0);
     private Vector3 CoinSpawnPos = new Vector3(55.74f, 3.46f, 180.19f);
 
+    //General
+    private bool ItsOnGround = false;
+    public int CounterCoins;
     private float CoolDownTime = 5f;
     private float NextRestart;
 
-    private Vector3 SpawnPoint = new Vector3(-2.206353f, -1.443f, 9.473548f);
-
+    
+    //Particle
     public ParticleSystem Running_particle;
     public ParticleSystem Running_particle_2;
     public ParticleSystem RecolectParticle;
 
+    //Prefabs
     public GameObject CoinsSpawn;
     public GameObject projectilePrefab;
 
+    
+    //Animations
+    public Animator PlayerAnimator;
+
+    //Connecting Scripts
     private GameManager GameManagerScript;
-
-    private Animator PlayerAnimator;
-
     private SpawnManager SpawnManagerScript;
     private AudioManager AudioManagerScript;
     private MenuManager MenuManagerScript;
 
+    //UI
     public GameObject UItuto;
 
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -54,7 +59,6 @@ public class PlayerController : MonoBehaviour
         transform.position = SpawnPoint;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(GameManagerScript.PlayerLife <= 0)
@@ -76,18 +80,18 @@ public class PlayerController : MonoBehaviour
         }
         
 
-        //Disparo
+        //Shot
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectilePrefab, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.85f, gameObject.transform.position.z), gameObject.transform.rotation);
             AudioManagerScript.PlaySound(2);
 
-            //PlayerAnimator.SetTrigger("Shotting");
+            PlayerAnimator.SetTrigger("Shot");
         }
 
 
-        //Reset con CoolDown
+        //Reset with CoolDown
         if(Time.time > NextRestart)
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -99,33 +103,20 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //PARTICULAS
+        //Particle
 
         if (ItsOnGround == true && transform.rotation.x <= 20 && verticalInput != 0)
         {
-            //  Running_particle.Play();
-            // Running_particle_2.Play();
             Running_particle.gameObject.SetActive(true);
             Running_particle_2.gameObject.SetActive(true);
-
-
         }
         else
         {
-            // Running_particle.Pause();
-            //Running_particle_2.Pause();  
             Running_particle.gameObject.SetActive(false);
             Running_particle_2.gameObject.SetActive(false);
         }
 
-
-        //TESTEO PARA SCENA 2  BORRAR MÁS TARDE
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            transform.position = new Vector3(-23.6f, 10.69f, 65.5f);
-        }
-
+        //Coin
         if (GameManagerScript.counter >= 3)
         {
             Instantiate(CoinsSpawn, CoinSpawnPos, CoinsSpawn.transform.rotation);
@@ -133,7 +124,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //Detectar colision con el suelo + Evitar subir montañas
+    //Detect the colision with the floor to prevent climbing the mountain
     void OnCollisionEnter(Collision otherCollider)
     {
         if (otherCollider.gameObject.CompareTag("Ground"))
@@ -141,7 +132,7 @@ public class PlayerController : MonoBehaviour
             ItsOnGround = true;
         }
 
-
+        // TP
         if (otherCollider.gameObject.CompareTag("TP") && CounterCoins >= 3)
         {
             SceneManager.LoadScene(2);
@@ -151,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("TP") && CounterCoins <= 3)
+        if (collision.gameObject.CompareTag("TP") && CounterCoins <= 3) // NO TP
         {
             UItuto.SetActive(true);
         }
@@ -164,7 +155,7 @@ public class PlayerController : MonoBehaviour
     //Recolector de monedas
     private void OnTriggerEnter(Collider otherCollider)
     {
-        if (otherCollider.gameObject.CompareTag("coin"))
+        if (otherCollider.gameObject.CompareTag("coin")) // What is happening when you pick up a coin
         {
             CounterCoins++;
             Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
@@ -173,7 +164,7 @@ public class PlayerController : MonoBehaviour
             AudioManagerScript.PlaySound(1);
         }
 
-        if (otherCollider.gameObject.CompareTag("SuperCoin"))
+        if (otherCollider.gameObject.CompareTag("SuperCoin")) // When you are gonna win and what is happening when you do it
         {
             CounterCoins++;
             Debug.Log($"Has conseguido{CounterCoins}, ¡Sigue Así!");
@@ -183,9 +174,8 @@ public class PlayerController : MonoBehaviour
             MenuManagerScript.WIN();
             speed = 0;
             rotationspeed = 0;
+            GameManagerScript.win = true;
         }
-
-
     }
 
     public void GameOver()

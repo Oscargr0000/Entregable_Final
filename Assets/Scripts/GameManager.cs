@@ -11,9 +11,11 @@ public class GameManager : MonoBehaviour
 
     //Boss
     public int BossHits;
+    public int ChikensKilled;
 
     //Game Over
     public bool gameOver;
+    public bool win;
     public ParticleSystem DeadParticle;
 
     //UI
@@ -24,55 +26,47 @@ public class GameManager : MonoBehaviour
     public GameObject RestartPos;
     public GameObject Coins;
     public GameObject Shot;
-    //public GameObject Shotting;
 
-    private PlayerController PlayerControllerScript;
+    //Connecting Scripts
     private SpawnManager spawnManagerScript;
     private SpawnBos SpawnBossScript;
-    private AudioManager AudioManagerScript;
    
-
     
-
-    public int ChikensKilled;
+    
 
     void Start()
     {
-        
-        PlayerControllerScript = FindObjectOfType<PlayerController>();
+        //Scripts
         spawnManagerScript = FindObjectOfType<SpawnManager>();
         SpawnBossScript = FindObjectOfType<SpawnBos>();
-        AudioManagerScript = FindObjectOfType<AudioManager>();
 
-        
-
+        //Disable the Scripts Because they will be call in a future moment
         SpawnBossScript.enabled = false;
         spawnManagerScript.enabled = false;
-
-
-        
+    
+        //Game Over
         gameOver = false;
 
     }
 
     private void Update()
     {
-
+        // Cancel the spawning of the chickens to bring pass the Boss Spawn Script
         if(spawnManagerScript.TotalEnemy == 3)
         {
             spawnManagerScript.enabled = false;
         }
 
+        // Spawn the boss when all the chikens are dead
         if(ChikensKilled >= 6)
         {
             SpawnBossScript.enabled = true;
         }
-
-
     }
     
 
     
+    // UI for HP and MONEY (No he conseguido que funcione)
 
     /*public void UpdateScore(int pointToAdd)
     {

@@ -29,10 +29,19 @@ public class ChickenEnemy : MonoBehaviour
             speed = 0f;
         }
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-       
+        if(gameManagerScript.win == true)
+        {
+            ChikenDamage = 0;
+            speed = 0;
+        }
 
-        transform.LookAt(player.transform);   
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+
+        if (gameManagerScript.gameOver ==false)
+        {
+            transform.LookAt(player.transform);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    //This MonoBehaviour is connectet with other Scripts and allow them to play the sound we can find in the inspector
 
+    //Sounds
     private AudioSource MainMenuAudioSource;
     public AudioClip[] Sound;
-    // Start is called before the first frame update
+    
+
     void Start()
     {
         MainMenuAudioSource = FindObjectOfType<AudioSource>();
+
+        //OST
         PlaySound(4);
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlaySound(int SoundNum)
     {
+        //General Sounds
         MainMenuAudioSource.PlayOneShot(Sound[SoundNum], 1);
     }
 }

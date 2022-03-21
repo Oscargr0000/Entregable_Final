@@ -8868,6 +8868,7 @@ MonoBehaviour:
   PlayerLife: 100
   BossHits: 0
   gameOver: 0
+  win: 0
   DeadParticle: {fileID: 0}
   ScoreText: {fileID: 1652136081}
   HealthUI: {fileID: 1500190747}
@@ -26009,6 +26010,10 @@ PrefabInstance:
       propertyPath: CoinsSpawn
       value: 
       objectReference: {fileID: 7008465811677082705, guid: 075c9ebe9b8ceb0498b4aa8dcd1ce254, type: 3}
+    - target: {fileID: 2462010820600448600, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 360344318}
     - target: {fileID: 2462010820600448600, guid: 669d5b0e5bcaf0449870b944b633b8d5, type: 3}
       propertyPath: ShottingAnimation
       value: 

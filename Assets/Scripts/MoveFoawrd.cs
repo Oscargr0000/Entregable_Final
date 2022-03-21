@@ -73,7 +73,6 @@ public class MoveFoawrd : MonoBehaviour
             {
                 Destroy(otherCollider.gameObject);
                 Instantiate(SuperCoin, new Vector3(-23.6f, 4f, 65.5f), SuperCoin.transform.rotation);
-
             }
         }
     }
